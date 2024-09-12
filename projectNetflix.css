@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Mukta", sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("./assetsnetflix/images/bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.main .bgbox{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 24px 48px;
+}
+.nav img{
+    z-index: 2;
+}
+.nav-options{
+    z-index: 2;
+}
+.nav-options select{
+    height: 32px;
+    width: 124px;
+    color: white;
+    background-color: black;
+    border: 0.5px solid white;
+    margin: auto;
+    font-size: 1rem;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.nav-options button{
+    height: 32px;
+    width: 76px;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: none;
+}
+.hero{
+    height: 87%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    padding: 24px;
+}
+.hero .line1{
+    font-size: 48px;
+    font-weight: 1000;
+    text-align: center;
+}
+.hero .line2{
+    font-size: 24px;
+    text-align: center;
+}
+.hero .line3{
+    font-size: 20px;
+    text-align: center;
+}
+.hero-input input{
+    height: 56px;
+    width: 365px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0.5px solid white;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.hero-input button{
+    height: 56px;
+    width: 213px;
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.seperation{
+    height: 7px;
+    background-color: rgb(65, 65, 65);
+}
+.section{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    padding:  20px 0 ;
+    color: white;
+    align-items: center;
+}
+@media screen and (max-width:600px) {
+    .section{
+        flex-wrap: wrap;
+    }
+    .hero .line1{
+        font-size: 32px;
+    }
+    .hero .line2{
+        font-size: 18px;
+    }
+    .hero .line3{
+        font-size: 18px;
+    }
+    .nav{
+        max-width: 100%;
+        padding: 24px 24px;
+    }
+    .nav img{
+        height: 24px;
+        width: 90px;
+    }
+    .nav-options select{
+        width: 80px;
+        height: 32px;
+    }
+    .hero-input input{
+        height: 48px;
+        width: 300px;
+        padding: 2rem;
+    }
+    .faq-input{
+        padding: 4rem;
+    }
+}
+.sec-img img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+.sec-img{
+    position: relative;
+}
+.sec-img video{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    
+}
+.section-faq{
+    color: white;
+    padding:  4.5rem 0;
+}
+.faq{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+.faq-box{
+    background-color: rgb(47, 47, 47);
+    transition: 0.5s;
+    padding: 1.5rem;
+    width: 90%;
+    margin: auto;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+.faq-box:hover{
+    background-color: rgb(67, 66, 66);
+}
+.section-faq p{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+}
+.faq-input{
+    display: flex;
+    justify-content: center;
+}
+
+
+/**footer**/
+
+.footer1{
+    color: white;
+    opacity: 0.7;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+.footer1 a{
+    color: white;
+    margin-top: 1rem;
+    opacity: 0.7;
+}
+.footer2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 1rem;
+}
+.footer2 a{
+    display: block;
+    color: white;
+    margin-top: 1rem;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+.footer3 select{
+    height: 32px;
+    width: 124px;
+    color: white;
+    background-color: black;
+    border: 0.5px solid white;
+    margin: auto;
+    font-size: 1rem;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.footer3{
+    padding: 1rem;
+    margin-left: 0.7rem;
+    margin-bottom: 5rem;
+}
+.footer3 p{
+    color: white;
+    opacity: 0.7;
+    padding: 1rem 0;
+}
